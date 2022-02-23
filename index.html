@@ -13,16 +13,33 @@
 </head>
 <body>
     <main>
-        <div class="container">
+        <div class="container mt-5">
             <div class="row">
-                <div id="user-form" class="col-12 p-5 d-flex justify-content-center">
-                    <div class=" bg-white col-10">
-                        <div class="col-12">
+                <div id="user-form" class="col-12 p-5 d-flex flex-column justify-content-center align-items-center border-dark">
+                    <div id="data-section" class="bg-white col-10 mb-5 rounded d-flex flex-row justify-content-around p-5">
+                        <div>
+                            <label class="d-block" for="full-name">Nome e Cognome</label>
+                            <input id="full-name" type="text">
+                        </div>
+                        <div>
+                            <label class="d-block" for="trip-distance">Chilometri percorsi</label>
+                            <input id="trip-distance" type="text">
+                        </div>
+                        <div>
+                            <label for="user-age">Fascia d'età:</label>
+                            <form>
+                                <input list="user-ages" name="user-age" id="user-age" placeholder="hai più o meno di 18 anni?">
+                                    <datalist id="user-ages">
+                                    <option value="Minorenne">
+                                    <option value="Maggiorenne">
+                                    </datalist>
+                            </form>
+                        </div>
+                        
+                    </div>
 
-                        </div>
-                        <div class="col-12">
-                            
-                        </div>
+                    <div id="ticket-section" class=" bg-white col-10 rounded">
+                        
                     </div>
                 </div>
             </div>
