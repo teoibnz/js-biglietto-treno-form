@@ -22,10 +22,10 @@ generatedEvent.addEventListener("click", function(){
 
         document.getElementById("final-price").innerHTML = teenPrice;
     ;}
-    
+    userAgeInput = "";
+    userNameInput ="";
     
 });
-
 
 let priceBase = parseFloat (0.27 * tripDistance);
 console.log(priceBase);
