@@ -17,15 +17,15 @@
             <div class="row">
                 <div id="user-form" class="col-12 p-5 d-flex flex-column justify-content-center align-items-center border-dark">
                     <div id="data-section" class="bg-white col-10 mb-5 rounded d-flex flex-row justify-content-around p-5">
-                        <div>
+                        <div class="col-4">
                             <label class="d-block" for="full-name">Nome e Cognome</label>
                             <input id="full-name" type="text">
                         </div>
-                        <div>
+                        <div class="col-4">
                             <label class="d-block" for="trip-distance">Chilometri percorsi</label>
                             <input id="trip-distance" type="text">
                         </div>
-                        <div>
+                        <div class="col-4">
                             <label for="user-age">Fascia d'età:</label>
                             <form>
                                 <input list="user-ages" name="user-age" id="user-age" placeholder="hai più o meno di 18 anni?">
@@ -35,8 +35,17 @@
                                     </datalist>
                             </form>
                         </div>
-                        
+                        <div class="col">
+                            <button id="generated-event">
+                                Genera
+                            </button>
+                            
+                            <button>
+                                Annulla
+                            </button>
+                        </div>
                     </div>
+                    
 
                     <div id="ticket-section" class=" bg-white col-10 rounded">
                         

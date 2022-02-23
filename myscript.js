@@ -1,32 +1,35 @@
-// const percorsoInKm = prompt("Quanti Km devi percorrere?");
-// console.log("percorsoInKm");
 
-// const userAge = prompt("Quanti anni hai?");
-// console.log("userAge");
-
-// let priceBase = (0.21 * percorsoInKm);
-// console.log(priceBase);
+const tripDistance = document.getElementById('trip-distance');
+console.log("tripDistance");
 
 
-// const discountTeen = ((priceBase * 20) / 100);
-// console.log(discountTeen);
+let userAge = "";
 
-// const discountOld = ((priceBase * 40) / 100);
-// console.log(discountOld);
+let generatedEvent = document.getElement('generated-event')
 
+userAgeUnder = document.getElementById('user-ages').value = 'Minorenne';
+console.log('userAgesUnder');
 
-// if (userAge < 18) {
-//     teenPrice = priceBase - discountTeen;
-//     document.getElementById("teen-price").innerHTML = teenPrice;
-// };
+userAgeOver = document.getElementById('user-ages').value = 'Maggiorenne';
+console.log('userAgesOver');
 
 
-// if (userAge > 65) {
-//     oldPrice = priceBase - discountOld;
-//     document.getElementById("old-price").innerHTML = oldPrice;
-// };
+generatedEvent.addEventListener("click", function{
+    if (userAgeUnder){
+        teenPrice = priceBase - discountTeen;
+    } else if (userAgeOver){
+        priceBase = priceBase;
+    };
+    
+});
 
-// if ((userAge > 18) && (userAge < 65)) {
-//     document.getElementById('full-price').innerHTML = priceBase;
-// };
+let priceBase = parseFloat(0.27 * tripDistance);
+console.log(priceBase);
+
+
+const discountTeen = parseFloat((priceBase * 17) / 100);
+console.log(discountTeen);
+
+const discountOld = parseFloat((priceBase * 40) / 100);
+console.log(discountOld);
 
