@@ -9,6 +9,9 @@ let userNameInput = document.getElementById("full-name");
 let generatedEvent = document.getElementById('generated-event');
 
 let output = document.getElementById('final-price');
+
+let resetEvent = document.getElementById("reset");
+
 let pricePerKM = 0.27;
 
 let priceBase = ""
@@ -33,11 +36,14 @@ generatedEvent.addEventListener("click", function(){
         oldPrice = priceBase - ((priceBase * 33) / 100);
         document.getElementById("final-price").innerHTML = oldPrice;
     };
-    userAgeInput = "Minorenne";
-    userNameInput = "";
-
+    
 });
 
+resetEvent.addEventListener("click", function(){
+    userAgeInput.value = "Minorenne";
+    userNameInput.value = "";
+    tripDistance.value = ""
+})
 
 // const discountTeen = parseInt ((priceBase * 17) / 100);
 // console.log(discountTeen);
